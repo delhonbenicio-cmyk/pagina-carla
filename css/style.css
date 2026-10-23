@@ -94,7 +94,7 @@ header{position:relative;z-index:20;background:var(--bg);border-bottom:1px solid
   .facts{grid-template-columns:minmax(0,1fr);margin-top:40px}
   .fact{display:flex;align-items:baseline;gap:22px;padding:16px 0}
   .fact+.fact{padding-left:0;border-left:0;border-top:1px solid #D8C6B3}
-  .fact .v{font-size:44px;min-width:68px}
+  .fact .v{font-size:44px;width:104px;flex:none;text-align:right}
   .fact .l{margin:0}
 }
 
