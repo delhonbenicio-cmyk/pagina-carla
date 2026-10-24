@@ -338,10 +338,20 @@ header {
   color: var(--navy)
 }
 
+.lead-t {
+  font-family: var(--f-display);
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  max-width: 20em;
+  margin: 0 0 14px
+}
+
 .lead {
   font-size: 19px;
   color: var(--muted);
-  max-width: 27em;
+  max-width: 32em;
   margin: 0 0 32px
 }
 
@@ -524,7 +534,7 @@ header {
 /* servicios */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px
 }
 
@@ -977,5 +987,36 @@ footer {
   .ubi {
     grid-template-columns: minmax(0, 1fr);
     gap: 40px
+  }
+}
+/* textos nuevos: subtítulo de sección, años en rango, columna fija */
+.sec-sub {
+  margin: -14px 0 32px;
+  color: var(--muted);
+  max-width: 30em
+}
+
+.about-body+.about-body {
+  margin-top: 16px
+}
+
+.tl-item .yr small {
+  display: block;
+  font-size: .68em;
+  line-height: 1.1
+}
+
+.tl-item p {
+  max-width: 32em
+}
+
+@media(min-width:901px) {
+  .duo {
+    align-items: start
+  }
+
+  #sobre-mi {
+    position: sticky;
+    top: 32px
   }
 }
